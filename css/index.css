@@ -23,6 +23,17 @@
   bottom: 0;
 }
 
+.responsive-display {
+  font-size: 1.25rem; /* Bootstrap equivalent of display-6 */
+}
+
+@media (min-width: 992px) {
+  /* Large screens (lg and above) */
+  .responsive-display {
+    font-size: 2.5rem; /* Bootstrap equivalent of display-4 */
+  }
+}
+
 /* الاتصالات الادارية */
 .card-button {
   transition: all 0.3s;

@@ -498,6 +498,10 @@ progress {
     font-size: 2.5rem;
   }
 }
+.display-lg-4 {font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -6508,6 +6512,9 @@ fieldset:disabled .btn {
 }
 .w-auto {
   width: auto !important;
+}
+.w-lg-50 {
+  width: 50% !important;
 }
 .mw-100 {
   max-width: 100% !important;
