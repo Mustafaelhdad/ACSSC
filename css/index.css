@@ -1,0 +1,43 @@
+* {
+  font-family: "Almarai", sans-serif;
+}
+
+.section-background-color {
+  background-color: #eff8ed;
+}
+
+/* hero section  */
+.circle-div-placeholder {
+  background: #aaead0;
+  height: 21.875rem;
+  width: 21.875rem;
+  border-radius: 50%;
+  margin-top: 2.5rem;
+}
+
+.hero-image-container {
+  min-height: 37.5rem;
+}
+
+.hero-image-container img {
+  bottom: 0;
+}
+
+/* الاتصالات الادارية */
+.card-button {
+  transition: all 0.3s;
+}
+
+.card-button:hover {
+  background-color: #96bb7c;
+  color: #fff;
+}
+
+.card-button:hover button {
+  background-color: #fff;
+  color: #96bb7c;
+}
+
+.card-button:hover i {
+  color: #fff !important;
+}
