@@ -19,84 +19,76 @@
     <title>الصفحة الرئيسية</title>
   </head>
   <body>
-    <!-- header section -->
-    <section class="text-center">
-      <div class="row">
-        <div
-          class="col-lg-7 col-md-6 col-12 d-flex align-items-center justify-content-center gap-4 py-3"
-        >
-          <button class="btn btn-success">
-            <span class="ms-1">&rarr;</span> خروج
-          </button>
-          <a href="" class="text-decoration-none text-success">مساعدة</a>
+    <!-- hero section -->
+    <section class="row mx-0">
+      <div
+        class="col-lg-7 col-md-6 col-12 d-flex justify-content-center py-5 mx-0 px-0"
+      >
+        <div class="w-75 w-lg-50 mt-5">
+          <h2 class="display-4 d-none d-lg-block fw-bold justify-text">
+            نظـــــام الإتصــالات <br />
+            الإدارة والعهـــــــدة <br />
+            المــــــــــدرســيــــــــة <br />
+          </h2>
+          <h2 class="display-6 d-lg-none fw-bold justify-text">
+            نظام الإتصالات <br />
+            الإدارة والعهدة <br />
+            المـــدرســيــــة <br />
+          </h2>
+          <p class="lead">
+            هو نظام إلكتروني مخصص لتنظيم العمليات الإدارية داخل المدارس. يتيح
+            النظام إدارة الموارد المدرسية وتسهيل التواصل بين مختلف الأقسام لضمان
+            كفاءة وسلاسة في الأداء.
+          </p>
         </div>
+      </div>
+
+      <div
+        class="col-lg-5 col-md-6 col-12 py-5 section-background-color position-relative hero-image-container mx-0 px-0"
+      >
+        <div class="mx-auto circle-div-placeholder"></div>
+        <img src="./img/child.png" class="position-absolute img-fluid" alt="" />
+      </div>
+    </section>
+
+    <!-- header section -->
+    <section class="text-center container">
+      <div class="row align-items-center">
         <div
-          class="col-lg-5 col-md-6 col-12 fw-bold section-background-color py-3 fs-6 text-center"
+          class="col-lg-4 col-md-4 col-12 d-flex align-items-center justify-content-center gap-4 py-3"
         >
+          <select class="form-select my-3" aria-label="Default select example">
+            <option selected disabled>اختر عنصر</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-12 fw-bold py-3 fs-6 text-center">
           المملكة العربية السعودية <br />
           الرياض <br />
           بيتي <br />
         </div>
-      </div>
-    </section>
-
-    <!-- hero section -->
-    <section>
-      <div class="row">
-        <div
-          class="col-lg-7 col-md-6 col-12 d-flex justify-content-center py-5"
-        >
-          <div class="w-75 w-lg-50 mt-5">
-            <h2 class="display-4 d-none d-lg-block fw-bold justify-text">
-              نظـــــام الإتصــــالات <br />
-              الإدارة والعهـــــــــدة <br />
-              المــــــــــــدرســيــــــــة <br />
-            </h2>
-            <h2 class="display-6 d-lg-none fw-bold justify-text">
-              نظام الإتصالات <br />
-              الإدارة والعهدة <br />
-              المـــدرســيــــة <br />
-            </h2>
-            <p class="lead">
-              هو نظام إلكتروني مخصص لتنظيم العمليات الإدارية داخل المدارس. يتيح
-              النظام إدارة الموارد المدرسية وتسهيل التواصل بين مختلف الأقسام
-              لضمان كفاءة وسلاسة في الأداء.
-            </p>
-            <select
-              class="form-select my-3"
-              aria-label="Default select example"
-            >
-              <option selected disabled>اختر عنصر</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
 
         <div
-          class="col-lg-5 col-md-6 col-12 py-5 section-background-color position-relative hero-image-container"
+          class="col-lg-3 col-md-3 col-12 d-flex align-items-center justify-content-center gap-4 py-3"
         >
-          <div class="mx-auto circle-div-placeholder"></div>
-          <img
-            src="./img/child.png"
-            class="position-absolute img-fluid"
-            alt=""
-          />
+          <button class="btn btn-success">
+            <span class="me-1">&rarr;</span> خروج
+          </button>
+          <a href="" class="text-decoration-none text-success">مساعدة</a>
         </div>
       </div>
     </section>
 
     <!-- الاتصالات الادارية -->
     <section class="container py-5">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h4 class="display-6 fw-bold">الإتصالات الإدارية</h4>
-        <button class="btn btn-outline-secondary rounded py-1 px-4">
-          طباعة
-        </button>
+      <div class="d-flex justify-content-center align-items-center mb-4">
+        <h4 class="display-6 fw-bold">الصادر والوارد</h4>
       </div>
 
-      <div class="row g-4 mt-3 mx-auto justify-content-center">
+      <div class="row g-4 my-3 mx-auto justify-content-center">
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card shadow p-4 card-button text-center">
             <i
@@ -181,18 +173,19 @@
           </div>
         </div>
       </div>
+
+      <div class="text-center">
+        <button class="btn btn-secondary rounded py-1 px-4 mt-3">طباعة</button>
+      </div>
     </section>
 
     <!-- العهدة المدرسية -->
     <section class="container py-5">
-      <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex justify-content-center align-items-center mb-4">
         <h4 class="display-6 fw-bold">العهدة المدرسية</h4>
-        <button class="btn btn-outline-secondary rounded py-1 px-4">
-          طباعة
-        </button>
       </div>
 
-      <div class="row g-4 mt-3 mx-auto justify-content-center">
+      <div class="row g-4 my-3 mx-auto justify-content-center">
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card shadow p-4 card-button text-center">
             <i
@@ -221,18 +214,19 @@
           </div>
         </div>
       </div>
+
+      <div class="text-center">
+        <button class="btn btn-secondary rounded py-1 px-4 mt-3">طباعة</button>
+      </div>
     </section>
 
     <!-- أرشفة الملفات -->
     <section class="container py-5">
-      <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex justify-content-center align-items-center mb-4">
         <h4 class="display-6 fw-bold">أرشفة الملفات</h4>
-        <button class="btn btn-outline-secondary rounded py-1 px-4">
-          طباعة
-        </button>
       </div>
 
-      <div class="row g-4 mt-3 mx-auto justify-content-center">
+      <div class="row g-4 my-3 mx-auto justify-content-center">
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card shadow p-4 card-button text-center">
             <i
@@ -260,6 +254,10 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-secondary rounded py-1 px-4 mt-3">طباعة</button>
       </div>
     </section>
 
