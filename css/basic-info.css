@@ -1306,6 +1306,20 @@ body {
   }
 }
 
+/* Only apply padding-right when screen size is larger than md (768px) */
+@media (min-width: 768px) {
+  #wrapper.toggled {
+    padding-right: 250px;
+  }
+}
+
+/* Ensure no padding-right is applied on screens smaller than 768px */
+@media (max-width: 767px) {
+  #wrapper.toggled {
+    padding-right: 0; /* Remove padding on small screens */
+  }
+}
+
 /* Sidebar Dropdown Items */
 .sidebar-nav .dropdown-menu {
   background-color: #343a40; /* Set the background color to a dark shade */
