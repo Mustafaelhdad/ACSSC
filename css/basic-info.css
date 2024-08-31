@@ -1305,3 +1305,33 @@ body {
     margin-right: 0;
   }
 }
+
+/* Sidebar Dropdown Items */
+.sidebar-nav .dropdown-menu {
+  background-color: #343a40; /* Set the background color to a dark shade */
+  color: #ffffff; /* Set the text color to white */
+}
+
+.sidebar-nav .dropdown-menu .dropdown-item {
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.sidebar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #495057; /* Change background color on hover */
+  color: #ffffff; /* Keep text color white on hover */
+}
+
+/* Override Bootstrap default dropdown styles if necessary */
+.dropdown-menu {
+  background-color: #343a40 !important; /* Dark background for the dropdown */
+  color: #ffffff !important; /* White text color */
+}
+
+.dropdown-item {
+  color: #ffffff !important; /* Ensure text color is white */
+}
+
+.dropdown-item:hover {
+  background-color: #495057 !important; /* Darker background on hover */
+  color: #ffffff !important; /* Keep text color white on hover */
+}
