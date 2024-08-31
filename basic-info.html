@@ -56,8 +56,17 @@
 
         <div class="collapse navbar-collapse" id="smallScreenNavbar">
           <ul class="navbar-nav me-auto">
+            <!-- First List Item -->
+            <li class="nav-item me-0">
+              <a class="nav-link" href="#">البيانات الأساسية</a>
+            </li>
+            <!-- Second List Item -->
+            <li class="nav-item me-0">
+              <a class="nav-link" href="#">ترميز البيانات</a>
+            </li>
+
             <!-- First Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown me-0">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -69,14 +78,13 @@
                 الصادر والوارد
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <li><a class="dropdown-item" href="#">البيانات الأساسية</a></li>
-                <li><a class="dropdown-item" href="#">ترميز البيانات</a></li>
                 <li><a class="dropdown-item" href="#">تسجيل الصادر</a></li>
                 <li><a class="dropdown-item" href="#">تسجيل الوارد</a></li>
                 <li>
                   <a class="dropdown-item" href="#">المطلعين علي التعاميم</a>
                 </li>
                 <li><a class="dropdown-item" href="#">إسناد التعاميم</a></li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
               </ul>
             </li>
 
@@ -99,6 +107,7 @@
                 <li>
                   <a class="dropdown-item" href="#">تسجيل بيانات العهدة</a>
                 </li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
               </ul>
             </li>
 
@@ -119,6 +128,7 @@
                 <li>
                   <a class="dropdown-item" href="#">تسجيل بيانات الملفات</a>
                 </li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
               </ul>
             </li>
           </ul>
@@ -507,31 +517,38 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Menu Toggle Script -->
     <script>
-            $(function() {
-        // Toggle the sidebar when the menu button is clicked
-        $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-        });
+              $(function() {
+          // Toggle the sidebar when the menu button is clicked
+          $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+          });
 
-        // Handle window resizing
-        $(window).resize(function(e) {
-          if ($(window).width() <= 768) {
-            $("#wrapper").removeClass("toggled");
-          } else {
-            $("#wrapper").addClass("toggled");
+          // Handle window resizing
+          $(window).resize(function(e) {
+            if ($(window).width() <= 768) {
+              $("#wrapper").removeClass("toggled");
+            } else {
+              $("#wrapper").addClass("toggled");
+            }
+          });
+
+          // Add 'active' class to clicked sidebar link and remove from others
+          $("#sidebar-wrapper a").click(function(e) {
+            // Remove active class from all links
+            $("#sidebar-wrapper a").removeClass("active");
+
+            // Add active class to the clicked link
+            $(this).addClass("active");
+          });
+
+          // Collapse the navbar when any nav-link or dropdown-item is clicked
+              $('.navbar-nav .dropdown-menu .dropdown-item, .navbar-nav > .nav-item:not(.dropdown) > .nav-link').click(function() {
+          if ($(window).width() < 768) {
+              $('.navbar-collapse').collapse('hide');
           }
-        });
-
-        // Add 'active' class to clicked sidebar link and remove from others
-        $("#sidebar-wrapper a").click(function(e) {
-          // Remove active class from all links
-          $("#sidebar-wrapper a").removeClass("active");
-
-          // Add active class to the clicked link
-          $(this).addClass("active");
-        });
       });
+        });
     </script>
   </body>
 </html>
