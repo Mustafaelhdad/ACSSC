@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/basic-info.css" />
+    <link rel="stylesheet" href="./css/sub-basic-info.css" />
 
     <title>البيانات الأساسية</title>
   </head>
@@ -155,7 +156,7 @@
             >
               الصادر والوارد
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu1">
               <li><a class="dropdown-item" href="#">تسجيل الصادر</a></li>
               <li><a class="dropdown-item" href="#">تسجيل الوارد</a></li>
               <li>
@@ -178,7 +179,7 @@
             >
               العهدة المدرسية
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu2">
               <li><a class="dropdown-item" href="#">تسجيل أصناف العهدة</a></li>
               <li><a class="dropdown-item" href="#">تسجيل بيانات العهدة</a></li>
               <li><a class="dropdown-item" href="#">طباعة</a></li>
@@ -197,7 +198,7 @@
             >
               أرشفة الملفات
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu3">
               <li><a class="dropdown-item" href="#">تسجيل الملفات</a></li>
               <li>
                 <a class="dropdown-item" href="#">تسجيل بيانات الملفات</a>
@@ -517,38 +518,58 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Menu Toggle Script -->
     <script>
-              $(function() {
-          // Toggle the sidebar when the menu button is clicked
-          $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-          });
-
-          // Handle window resizing
-          $(window).resize(function(e) {
-            if ($(window).width() <= 768) {
-              $("#wrapper").removeClass("toggled");
-            } else {
-              $("#wrapper").addClass("toggled");
-            }
-          });
-
-          // Add 'active' class to clicked sidebar link and remove from others
-          $("#sidebar-wrapper a").click(function(e) {
-            // Remove active class from all links
-            $("#sidebar-wrapper a").removeClass("active");
-
-            // Add active class to the clicked link
-            $(this).addClass("active");
-          });
-
-          // Collapse the navbar when any nav-link or dropdown-item is clicked
-              $('.navbar-nav .dropdown-menu .dropdown-item, .navbar-nav > .nav-item:not(.dropdown) > .nav-link').click(function() {
-          if ($(window).width() < 768) {
-              $('.navbar-collapse').collapse('hide');
-          }
-      });
+                 $(function() {
+        // Toggle the sidebar when the menu button is clicked
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
         });
+
+        // Handle window resizing
+        $(window).resize(function(e) {
+          if ($(window).width() <= 768) {
+            $("#wrapper").removeClass("toggled");
+          } else {
+            $("#wrapper").addClass("toggled");
+          }
+        });
+
+        // Add 'active' class to clicked sidebar link and remove from others
+        $("#sidebar-wrapper a").click(function(e) {
+          // Remove active class from all links
+          $("#sidebar-wrapper a").removeClass("active");
+
+          // Add active class to the clicked link
+          $(this).addClass("active");
+        });
+
+        // Toggle dropdown content visibility on click
+        $(".dropdown-toggle").click(function(e) {
+          e.preventDefault();
+
+          var $dropdown = $(this).next(".custom-dropdown-style");
+
+          if ($dropdown.hasClass("show")) {
+            // Collapse the dropdown
+            $dropdown.removeClass("show");
+            $dropdown.css("height", "0");
+            $dropdown.css("padding", "0");
+          } else {
+            // Expand the dropdown
+            var autoHeight = $dropdown[0].scrollHeight + "px";
+            $dropdown.addClass("show");
+            $dropdown.css("height", 'auto');
+            $dropdown.css("padding", "10px 0");
+          }
+        });
+
+        // Collapse the navbar when any nav-link or dropdown-item is clicked
+        $('.navbar-nav .dropdown-menu .dropdown-item, .navbar-nav > .nav-item:not(.dropdown) > .nav-link').click(function() {
+          if ($(window).width() < 768) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        });
+      });
     </script>
   </body>
 </html>

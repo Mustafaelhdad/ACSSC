@@ -1,0 +1,16 @@
+.custom-dropdown-style {
+  background-color: #343a40; /* Ensure background color is set */
+  list-style: none;
+  padding: 0;
+  transition: height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  height: 0;
+  display: block; /* Ensure display is block */
+  opacity: 0; /* Add opacity for smooth transition */
+}
+
+.custom-dropdown-style.show {
+  height: auto; /* Dynamically set by JavaScript */
+  padding: 10px 0;
+  opacity: 1; /* Make it fully opaque when shown */
+}
