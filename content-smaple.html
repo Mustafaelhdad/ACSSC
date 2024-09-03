@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/basic-info.css" />
+    <link rel="stylesheet" href="./css/sub-basic-info.css" />
+
+    <title>البيانات الأساسية</title>
+  </head>
+  <body style="background-image: url('./img/bg.jpg');">
+    <div id="wrapper" class="toggled">
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <h4 class="text-center mb-5">بيانات المدرسة</h4>
+
+          <form action="" id="schoolInfo">
+            <div class="row">
+              <!-- اسم الادارة -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="educational-administration">
+                      <i class="fa fa-leanpub fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="educational-administration">
+                      اسم الإدارة التعليمية
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="educational-administration"
+                      aria-describedby="educational-administration"
+                      placeholder="اسم الإدارة التعليمية"
+                      value="الرياض"
+                      required
+                    />
+
+                    <div class="invalid-feedback">
+                      يرجى إدخال الإدارة التعليمية.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">
+                  يرجى إدخال الإدارة التعليمية.
+                </div>
+              </div>
+
+              <!-- اسم المدرسة -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="school">
+                      <i class="fa fa-building fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="school">اسم المكتب أو المدرسة</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="school"
+                      aria-describedby="school"
+                      placeholder="اسم المدرسة"
+                      value="مدرسة حماصة الثانوية بنين"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
+              </div>
+
+              <!-- اسم المدير/ة -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="admin">
+                      <i
+                        class="fa fa-user-circle-o fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="admin"> اسم المدير/ة </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="admin"
+                      aria-describedby="admin"
+                      placeholder="اسم المدير/ة"
+                      value="العبد لله"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+              </div>
+
+              <!-- اسم مسجل بيانات الصادر -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="dataImportedRegister">
+                      <i
+                        class="fa fa-user-circle-o fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="dataImportedRegister">
+                      اسم مسجل بيانات الصادر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dataImportedRegister"
+                      aria-describedby="dataImportedRegister"
+                      placeholder="اسم مسجل بيانات الصادر"
+                      value="العبد لله"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+              </div>
+
+              <!-- اسم مسجل بيانات الوارد -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="dataExportedRegister">
+                      <i
+                        class="fa fa-user-circle-o fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="dataExportedRegister">
+                      اسم مسجل بيانات الوارد</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dataExportedRegister"
+                      aria-describedby="dataExportedRegister"
+                      placeholder="اسم مسجل بيانات الوارد"
+                      value="العبد لله"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+              </div>
+
+              <!-- مكان فاضي -->
+              <div class="form-group col-12 col-md-6 mb-3"></div>
+
+              <!-- اسم المستخدم -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="user">
+                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="user">اسم المستخدم</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="user"
+                      aria-describedby="user"
+                      placeholder="اسم المستخدم"
+                      value="0505204105"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+              </div>
+
+              <!-- كلمة المرور -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="password">
+                      <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="password">كلمة المرور</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      aria-describedby="password"
+                      minlength="8"
+                      placeholder="كلمة المرور"
+                      value="Su12345678"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-2 col-lg-1"></div>
+                  <div class="col-10 col-lg-11">
+                    <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+                    <p class="text-danger">
+                      يجب أن تكون 8 خانات. تشمل حرف انجليزي كبير وصغير والباقي
+                      أرقام
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- الجنس -->
+              <div class="form-group col-12 col-md-6 my-3">
+                <div class="form-group row mb-2">
+                  <div
+                    class="col-2 col-lg-2 text-center d-flex align-items-center"
+                  >
+                    <label> النوع </label>
+                  </div>
+
+                  <div class="col-10 col-lg-10 row d-flex align-items-center">
+                    <div class="col-5 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="boys"
+                        value="boys"
+                        required
+                      />
+                      <label class="form-check-label" for="boys">بنين</label>
+                    </div>
+
+                    <div class="col-5 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="girls"
+                        value="girls"
+                        checked
+                        required
+                      />
+                      <label class="form-check-label" for="girls">بنات</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center d-flex justify-content-center gap-2 mt-2">
+              <button type="submit" class="btn btn-secondary">حفظ</button>
+              <a
+                href="https://www.s204105.com/default.aspx"
+                class="btn btn-outline-secondary"
+                >عودة</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+                 $(function() {
+        // Toggle the sidebar when the menu button is clicked
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+
+        // Handle window resizing
+        $(window).resize(function(e) {
+          if ($(window).width() <= 768) {
+            $("#wrapper").removeClass("toggled");
+          } else {
+            $("#wrapper").addClass("toggled");
+          }
+        });
+
+        // Add 'active' class to clicked sidebar link and remove from others
+        $("#sidebar-wrapper a").click(function(e) {
+          // Remove active class from all links
+          $("#sidebar-wrapper a").removeClass("active");
+
+          // Add active class to the clicked link
+          $(this).addClass("active");
+        });
+
+        // Toggle dropdown content visibility on click
+        $(".dropdown-toggle").click(function(e) {
+          e.preventDefault();
+
+          var $dropdown = $(this).next(".custom-dropdown-style");
+
+          if ($dropdown.hasClass("show")) {
+            // Collapse the dropdown
+            $dropdown.removeClass("show");
+            $dropdown.css("height", "0");
+            $dropdown.css("padding", "0");
+          } else {
+            // Expand the dropdown
+            var autoHeight = $dropdown[0].scrollHeight + "px";
+            $dropdown.addClass("show");
+            $dropdown.css("height", 'auto');
+            $dropdown.css("padding", "10px 0");
+          }
+        });
+
+        // Collapse the navbar when any nav-link or dropdown-item is clicked
+        $('.navbar-nav .dropdown-menu .dropdown-item, .navbar-nav > .nav-item:not(.dropdown) > .nav-link').click(function() {
+          if ($(window).width() < 768) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
