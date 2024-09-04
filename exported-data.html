@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/basic-info.css" />
-    <link rel="stylesheet" href="./css/sub-basic-info.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
 
-    <title>البيانات الأساسية</title>
+    <title>بيانات الصادر</title>
   </head>
   <body style="background-image: url('./img/bg.jpg');">
     <nav class="navbar navbar-expand navbar-dark bg-success d-none d-md-block">
@@ -140,7 +140,7 @@
     <div id="wrapper" class="toggled">
       <!-- Sidebar -->
       <div id="sidebar-wrapper" class="bg-success text-white d-none d-md-block">
-        <ul class="sidebar-nav pt-3 mt-4">
+        <ul class="sidebar-nav pt-3 mt-5">
           <li><a href="#">البيانات الأساسية</a></li>
           <li><a href="#">ترميز البيانات</a></li>
 
@@ -215,293 +215,490 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <div class="container-fluid">
-          <h4 class="text-center mb-5">بيانات المدرسة</h4>
+          <h4 class="text-center mb-5">بيانات الصادر</h4>
 
           <form action="" id="schoolInfo">
             <div class="row">
-              <!-- اسم الادارة -->
+              <button class="btn btn-secondary mb-3">
+                تحديث رقم الملف والتسلسل
+              </button>
+
+              <!-- المعاملات المسجلة -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="educational-administration">
-                      <i class="fa fa-leanpub fa-2x" aria-hidden="true"></i>
+                    <label for="transaction">
+                      <i class="fa fa-exchange fa-2x" aria-hidden="true"></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="educational-administration">
-                      اسم الإدارة التعليمية
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="educational-administration"
-                      aria-describedby="educational-administration"
-                      placeholder="اسم الإدارة التعليمية"
-                      value="الرياض"
-                      required
-                    />
+                    <label for="transaction"> المعاملات المسجلة </label>
+
+                    <select
+                      class="form-select"
+                      id="transaction"
+                      aria-label="Default select example"
+                    >
+                      <option selected disabled>المعاملات المسجلة</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
                     <div class="invalid-feedback">
-                      يرجى إدخال الإدارة التعليمية.
+                      يرجى إدخال المعاملات المسجلة.
                     </div>
                   </div>
                 </div>
 
                 <div class="invalid-feedback">
-                  يرجى إدخال الإدارة التعليمية.
+                  يرجى إدخال المعاملات المسجلة.
                 </div>
               </div>
 
-              <!-- اسم المدرسة -->
+              <!-- عدد السجلات -->
+              <div
+                class="form-group col-12 col-md-6 mb-3 d-flex align-items-end"
+              >
+                <h5>عدد السجلات: 3</h5>
+              </div>
+
+              <!-- رقم الصادر -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="school">
-                      <i class="fa fa-building fa-2x" aria-hidden="true"></i>
-                    </label>
-                  </div>
-
-                  <div class="col-10 col-lg-11">
-                    <label for="school">اسم المكتب أو المدرسة</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="school"
-                      aria-describedby="school"
-                      placeholder="اسم المدرسة"
-                      value="مدرسة حماصة الثانوية بنين"
-                      required
-                    />
-
-                    <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
-                  </div>
-                </div>
-
-                <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
-              </div>
-
-              <!-- اسم المدير/ة -->
-              <div class="form-group col-12 col-md-6 mb-3">
-                <div class="form-group row">
-                  <div
-                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
-                  >
-                    <label for="admin">
+                    <label for="exportedNo">
                       <i
-                        class="fa fa-user-circle-o fa-2x"
+                        class="fa fa-external-link fa-2x"
                         aria-hidden="true"
                       ></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="admin"> اسم المدير/ة </label>
+                    <label for="exportedNo"> رقم الصادر </label>
                     <input
                       type="text"
                       class="form-control"
-                      id="admin"
-                      aria-describedby="admin"
-                      placeholder="اسم المدير/ة"
-                      value="العبد لله"
+                      id="exportedNo"
+                      aria-describedby="exportedNo"
+                      placeholder="رقم الصادر"
                       required
                     />
 
-                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                    <div class="invalid-feedback">يرجى إدخال رقم الصادر.</div>
                   </div>
                 </div>
 
-                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                <div class="invalid-feedback">يرجى إدخال رقم الصادر.</div>
               </div>
 
-              <!-- اسم مسجل بيانات الصادر -->
+              <!-- التاريخ -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="dataImportedRegister">
+                    <label for="date">
+                      <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="date"> التاريخ </label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      aria-describedby="date"
+                      placeholder="التاريخ"
+                      required
+                      style="text-align: right;"
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال التاريخ</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال التاريخ</div>
+              </div>
+
+              <!-- جهة الصادر -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="exportTarget">
                       <i
-                        class="fa fa-user-circle-o fa-2x"
+                        class="fa fa-location-arrow fa-2x"
                         aria-hidden="true"
                       ></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="dataImportedRegister">
-                      اسم مسجل بيانات الصادر</label
+                    <label for="exportTarget"> جهة الصادر </label>
+
+                    <select
+                      class="form-select"
+                      id="exportTarget"
+                      aria-label="Default select example"
                     >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="dataImportedRegister"
-                      aria-describedby="dataImportedRegister"
-                      placeholder="اسم مسجل بيانات الصادر"
-                      value="العبد لله"
-                      required
-                    />
+                      <option selected disabled>جهة الصادر</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
 
-                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                    <div class="invalid-feedback">يرجى إدخال جهة الصادر.</div>
                   </div>
                 </div>
 
-                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                <div class="invalid-feedback">يرجى إدخال جهة الصادر.</div>
               </div>
 
-              <!-- اسم مسجل بيانات الوارد -->
+              <!-- النوع -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="dataExportedRegister">
+                    <label for="exportType">
                       <i
-                        class="fa fa-user-circle-o fa-2x"
+                        class="fa fa-external-link-square fa-2x"
                         aria-hidden="true"
                       ></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="dataExportedRegister">
-                      اسم مسجل بيانات الوارد</label
+                    <label for="exportType"> النوع </label>
+
+                    <select
+                      class="form-select"
+                      id="exportType"
+                      aria-label="Default select example"
                     >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="dataExportedRegister"
-                      aria-describedby="dataExportedRegister"
-                      placeholder="اسم مسجل بيانات الوارد"
-                      value="العبد لله"
-                      required
-                    />
+                      <option selected disabled>النوع</option>
+                      <option value="1">تعميم</option>
+                      <option value="2">قرار</option>
+                    </select>
 
-                    <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                    <div class="invalid-feedback">يرجى إدخال النوع.</div>
                   </div>
                 </div>
 
-                <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                <div class="invalid-feedback">يرجى إدخال النوع.</div>
               </div>
 
-              <!-- مكان فاضي -->
-              <div class="form-group col-12 col-md-6 mb-3"></div>
-
-              <!-- اسم المستخدم -->
+              <!-- الموضوع -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="user">
-                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    <label for="subject">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="user">اسم المستخدم</label>
-                    <input
-                      type="text"
+                    <label for="subject"> الموضوع </label>
+                    <textarea
                       class="form-control"
-                      id="user"
-                      aria-describedby="user"
-                      placeholder="اسم المستخدم"
-                      value="0505204105"
+                      id="subject"
+                      aria-describedby="subject"
+                      placeholder="الموضوع"
                       required
-                    />
+                      rows="4"
+                    ></textarea>
 
-                    <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+                    <div class="invalid-feedback">يرجى إدخال الموضوع.</div>
                   </div>
                 </div>
 
-                <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+                <div class="invalid-feedback">يرجى إدخال الموضوع.</div>
               </div>
 
-              <!-- كلمة المرور -->
+              <!-- المشفوع -->
               <div class="form-group col-12 col-md-6 mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="password">
-                      <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                    <label for="textInputField1">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="password">كلمة المرور</label>
+                    <label for="textInputField1"> المشفوع </label>
                     <input
-                      type="password"
+                      type="text"
                       class="form-control"
-                      id="password"
-                      aria-describedby="password"
-                      minlength="8"
-                      placeholder="كلمة المرور"
-                      value="Su12345678"
+                      id="textInputField1"
+                      aria-describedby="textInputField1"
+                      placeholder="المشفوع"
                       required
                     />
 
-                    <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+                    <div class="invalid-feedback">يرجى إدخال المشفوع.</div>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-2 col-lg-1"></div>
-                  <div class="col-10 col-lg-11">
-                    <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
-                    <p class="text-danger">
-                      يجب أن تكون 8 خانات. تشمل حرف انجليزي كبير وصغير والباقي
-                      أرقام
-                    </p>
-                  </div>
-                </div>
+                <div class="invalid-feedback">يرجى إدخال المشفوع.</div>
               </div>
 
-              <!-- الجنس -->
-              <div class="form-group col-12 col-md-6 my-3">
-                <div class="form-group row mb-2">
+              <!-- رقم الملف -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
                   <div
-                    class="col-2 col-lg-2 text-center d-flex align-items-center"
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label> النوع </label>
+                    <label for="textInputField2">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
                   </div>
 
-                  <div class="col-10 col-lg-10 row d-flex align-items-center">
-                    <div class="col-5 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="boys"
-                        value="boys"
-                        required
-                      />
-                      <label class="form-check-label" for="boys">بنين</label>
+                  <div class="col-10 col-lg-11">
+                    <label for="textInputField2"> رقم الملف </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="textInputField2"
+                      aria-describedby="textInputField2"
+                      placeholder="رقم الملف"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال رقم الملف.</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال رقم الملف.</div>
+              </div>
+
+              <!-- مسلسل  -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="textInputField3">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="textInputField3"> مسلسل </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="textInputField3"
+                      aria-describedby="textInputField3"
+                      placeholder="مسلسل "
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال مسلسل .</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال مسلسل .</div>
+              </div>
+
+              <!-- ملاحظات  -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="inputField4">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="inputField4"> ملاحظات </label>
+                    <textarea
+                      class="form-control"
+                      id="inputField4"
+                      aria-describedby="inputField4"
+                      placeholder="ملاحظات "
+                      required
+                      rows="4"
+                    ></textarea>
+
+                    <div class="invalid-feedback">يرجى إدخال ملاحظات .</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال ملاحظات .</div>
+              </div>
+
+              <!-- الملف  -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="textInputField5">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="textInputField5"> الملف </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="textInputField5"
+                      aria-describedby="textInputField5"
+                      placeholder="الملف "
+                      required
+                    />
+
+                    <div class="d-flex justify-content-center mt-3">
+                      <button class="btn btn-outline-danger">
+                        لا يوجد مرفق</button
+                      ><button class="btn btn-outline-secondary me-2">
+                        حذف المرفق
+                      </button>
                     </div>
 
-                    <div class="col-5 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="girls"
-                        value="girls"
-                        checked
-                        required
-                      />
-                      <label class="form-check-label" for="girls">بنات</label>
-                    </div>
+                    <div class="invalid-feedback">يرجى إدخال الملف .</div>
                   </div>
                 </div>
+
+                <div class="invalid-feedback">يرجى إدخال الملف .</div>
+              </div>
+
+              <h6 class="text-center">الجواب الرد</h6>
+
+              <!-- رقم الخطاب -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="textFieldInput6">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="textFieldInput6"> رقم الخطاب </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="textFieldInput6"
+                      aria-describedby="textFieldInput6"
+                      placeholder="رقم الخطاب"
+                      required
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال رقم الخطاب.</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال رقم الخطاب.</div>
+              </div>
+
+              <!-- التاريخ -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="date2">
+                      <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="date2"> التاريخ </label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date2"
+                      aria-describedby="date2"
+                      placeholder="التاريخ"
+                      required
+                      style="text-align: right;"
+                    />
+
+                    <div class="invalid-feedback">يرجى إدخال التاريخ</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال التاريخ</div>
+              </div>
+
+              <!-- ملاحظات  -->
+              <div class="form-group col-12 col-md-6 mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="inputField7">
+                      <!-- <i
+                        class="fa fa-external-link fa-2x"
+                        aria-hidden="true"
+                      ></i> -->
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="inputField7"> ملاحظات </label>
+                    <textarea
+                      class="form-control"
+                      id="inputField7"
+                      aria-describedby="inputField7"
+                      placeholder="ملاحظات "
+                      required
+                      rows="4"
+                    ></textarea>
+
+                    <div class="invalid-feedback">يرجى إدخال ملاحظات .</div>
+                  </div>
+                </div>
+
+                <div class="invalid-feedback">يرجى إدخال ملاحظات .</div>
               </div>
             </div>
 
             <div class="text-center d-flex justify-content-center gap-2 mt-2">
+              <button type="submit" class="btn btn-success">اضافة</button>
               <button type="submit" class="btn btn-secondary">حفظ</button>
+              <button type="submit" class="btn btn-primary">بحث</button>
+              <button type="submit" class="btn btn-danger">حذف</button>
               <a
                 href="https://www.s204105.com/default.aspx"
                 class="btn btn-outline-secondary"

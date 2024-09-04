@@ -3774,6 +3774,7 @@ fieldset:disabled .btn {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  z-index: 777777;
 }
 .navbar > .container,
 .navbar > .container-fluid,
