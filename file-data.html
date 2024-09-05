@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/basic-info.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
 
-    <title>ترميز البيانات</title>
+    <title>تسجيل بيانات الملفات</title>
   </head>
   <body style="background-image: url('./img/bg.jpg');">
     <nav class="navbar navbar-expand navbar-dark bg-success d-none d-md-block">
@@ -140,7 +140,7 @@
     <div id="wrapper" class="toggled">
       <!-- Sidebar -->
       <div id="sidebar-wrapper" class="bg-success text-white d-none d-md-block">
-        <ul class="sidebar-nav pt-3">
+        <ul class="sidebar-nav pt-3 mt-5">
           <li><a href="#">البيانات الأساسية</a></li>
           <li><a href="#">ترميز البيانات</a></li>
 
@@ -215,184 +215,58 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <div class="container-fluid">
-          <h4 class="text-center mb-5">ترميز البيانات</h4>
+          <h4 class="text-center mb-5">تسجيل بيانات الملفات</h4>
 
-          <div class="container">
-            <div class="d-flex align-items-center justify-content-center">
-              <select
-                class="form-select my-3"
-                aria-label="Default select example"
-              >
-                <option selected disabled>اختر عنصر</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
+          <!-- Dropdown for selecting file name -->
+          <div class="d-flex align-items-center justify-content-center">
+            <select class="form-select my-3" id="file-name-select">
+              <option selected disabled>اختر اسم الملف</option>
+              <option value="1">بببب</option>
+              <option value="2">سسس</option>
+              <option value="3">ييسسي</option>
+            </select>
+          </div>
 
-            <div class="row" style="max-height: 55vh; overflow: auto;">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">مسلسل</th>
-                    <th scope="col">اسم الترميز</th>
-                    <th scope="col">رقم الملف</th>
-                    <th scope="col">احذف</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>
-                      <button class="btn btn-danger py-0 px-2">حذف</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <!-- Table for displaying file data -->
+          <div class="row" style="max-height: 55vh; overflow: auto;">
+            <table class="table table-bordered">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">مسلسل</th>
+                  <th scope="col">العام من</th>
+                  <th scope="col">العام إلى</th>
+                  <th scope="col">اسم المسلم</th>
+                  <th scope="col">اسم المستلم</th>
+                  <th scope="col">موجود</th>
+                  <th scope="col">حذف</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>1445</td>
+                  <td>1446</td>
+                  <td>نام</td>
+                  <td>يييييييي</td>
+                  <td>نعم</td>
+                  <td>
+                    <button class="btn btn-danger py-0 px-2">حذف</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            <div class="text-center d-flex justify-content-center gap-2 mt-3">
-              <button type="submit" class="btn btn-outline-success">
-                تحميل ملف تقسيمات الادارة
-              </button>
-              <button type="submit" class="btn btn-success">اضافة</button>
-              <button type="submit" class="btn btn-secondary">حفظ</button>
-              <a
-                href="https://www.s204105.com/default.aspx"
-                class="btn btn-outline-secondary"
-                >عودة</a
-              >
-            </div>
+          <!-- Action buttons -->
+          <div class="text-center d-flex justify-content-center gap-2 mt-3">
+            <button type="submit" class="btn btn-success">اضافة</button>
+            <button type="submit" class="btn btn-secondary">حفظ</button>
+            <button type="submit" class="btn btn-danger">حذف</button>
+            <a
+              href="https://www.s204105.com/default.aspx"
+              class="btn btn-outline-secondary"
+              >عودة</a
+            >
           </div>
         </div>
       </div>
@@ -402,6 +276,51 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Menu Toggle Script -->
+    <script>
+      const students = {
+        class4: ["الطالب 1", "الطالب 2", "الطالب 3", "الطالب 4", "الطالب 5", "الطالب 6", "الطالب 7", "الطالب 8", "الطالب 9", "الطالب 10"],
+        class5: ["الطالب 11", "الطالب 12", "الطالب 13", "الطالب 14", "الطالب 15", "الطالب 16", "الطالب 17", "الطالب 18", "الطالب 19", "الطالب 20"],
+        class6: ["الطالب 21", "الطالب 22", "الطالب 23", "الطالب 24", "الطالب 25", "الطالب 26", "الطالب 27", "الطالب 28", "الطالب 29", "الطالب 30"],
+      };
+
+      function updateStudentInfo() {
+        const schoolClassSelect = document.getElementById('school-class');
+        const selectedOption = schoolClassSelect.options[schoolClassSelect.selectedIndex];
+        const studentCount = selectedOption.getAttribute('data-student-count');
+        const selectedClass = schoolClassSelect.value;
+
+        // Update student count
+        document.getElementById('student-count').innerText = `عدد طلاب الصف: ${studentCount}`;
+
+        // Show the "Select All" checkbox
+        document.getElementById('select-all-container').classList.remove('d-none');
+
+        // Generate student list
+        const studentListContainer = document.getElementById('student-list');
+        studentListContainer.innerHTML = ''; // Clear previous list
+
+        students[selectedClass].forEach((student, index) => {
+          const studentItem = document.createElement('div');
+          studentItem.className = 'student-list-item';
+          studentItem.innerHTML = `
+            <label for="student-${index}">
+              <input type="checkbox" id="student-${index}" class="student-checkbox" />
+              ${student}
+            </label>
+          `;
+          studentListContainer.appendChild(studentItem);
+        });
+      }
+
+      function selectAllStudents() {
+        const selectAllCheckbox = document.getElementById('select-all');
+        const studentCheckboxes = document.querySelectorAll('.student-checkbox');
+
+        studentCheckboxes.forEach(checkbox => {
+          checkbox.checked = selectAllCheckbox.checked;
+        });
+      }
+    </script>
     <script>
                  $(function() {
         // Toggle the sidebar when the menu button is clicked
