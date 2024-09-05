@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/basic-info.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+
+    <title>تسجيل بيانات الملفات</title>
+  </head>
+  <body style="background-image: url('./img/bg.jpg');">
+    <nav class="navbar navbar-expand navbar-dark bg-success d-none d-md-block">
+      <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"
+        ><span class="navbar-toggler-icon"></span
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExample02"
+        aria-controls="navbarsExample02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <form class="form-inline my-2 my-md-0"></form>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success d-md-none">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#smallScreenNavbar"
+          aria-controls="smallScreenNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="smallScreenNavbar">
+          <ul class="navbar-nav me-auto">
+            <!-- First List Item -->
+            <li class="nav-item me-0">
+              <a class="nav-link" href="#">البيانات الأساسية</a>
+            </li>
+            <!-- Second List Item -->
+            <li class="nav-item me-0">
+              <a class="nav-link" href="#">ترميز البيانات</a>
+            </li>
+
+            <!-- First Dropdown -->
+            <li class="nav-item dropdown me-0">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown1"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الصادر والوارد
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="#">تسجيل الصادر</a></li>
+                <li><a class="dropdown-item" href="#">تسجيل الوارد</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">المطلعين علي التعاميم</a>
+                </li>
+                <li><a class="dropdown-item" href="#">إسناد التعاميم</a></li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
+              </ul>
+            </li>
+
+            <!-- Second Dropdown -->
+            <li class="nav-item dropdown me-0">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                العهدة المدرسية
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <a class="dropdown-item" href="#">تسجيل أصناف العهدة</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">تسجيل بيانات العهدة</a>
+                </li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
+              </ul>
+            </li>
+
+            <!-- Third Dropdown -->
+            <li class="nav-item dropdown me-0">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown3"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                أرشفة الملفات
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="dropdown-item" href="#">تسجيل الملفات</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">تسجيل بيانات الملفات</a>
+                </li>
+                <li><a class="dropdown-item" href="#">طباعة</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="wrapper" class="toggled">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" class="bg-success text-white d-none d-md-block">
+        <ul class="sidebar-nav pt-3 mt-5">
+          <li><a href="#">البيانات الأساسية</a></li>
+          <li><a href="#">ترميز البيانات</a></li>
+
+          <!-- First Dropdown: 3rd to 6th li -->
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              id="dropdownMenu1"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الصادر والوارد
+            </a>
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu1">
+              <li><a class="dropdown-item" href="#">تسجيل الصادر</a></li>
+              <li><a class="dropdown-item" href="#">تسجيل الوارد</a></li>
+              <li>
+                <a class="dropdown-item" href="#">المطلعين علي التعاميم</a>
+              </li>
+              <li><a class="dropdown-item" href="#">إسناد التعاميم</a></li>
+              <li><a class="dropdown-item" href="#">طباعة</a></li>
+            </ul>
+          </li>
+
+          <!-- Second Dropdown: 7th and 8th li -->
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              id="dropdownMenu2"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              العهدة المدرسية
+            </a>
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu2">
+              <li><a class="dropdown-item" href="#">تسجيل أصناف العهدة</a></li>
+              <li><a class="dropdown-item" href="#">تسجيل بيانات العهدة</a></li>
+              <li><a class="dropdown-item" href="#">طباعة</a></li>
+            </ul>
+          </li>
+
+          <!-- Third Dropdown: remaining two -->
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              id="dropdownMenu3"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              أرشفة الملفات
+            </a>
+            <ul class="custom-dropdown-style" aria-labelledby="dropdownMenu3">
+              <li><a class="dropdown-item" href="#">تسجيل الملفات</a></li>
+              <li>
+                <a class="dropdown-item" href="#">تسجيل بيانات الملفات</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">طباعة</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <h4 class="text-center mb-5">طباعة</h4>
+
+          <!-- Form Section -->
+          <div class="row justify-content-center my-4">
+            <!-- Report Type Dropdown -->
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label
+                  for="report-type"
+                  class="col-md-4 col-form-label text-end"
+                  >نوع التقرير:</label
+                >
+                <div class="col-md-8">
+                  <select class="form-control" id="report-type">
+                    <option value="كشف بالملفات المسجلة">
+                      كشف بالملفات المسجلة
+                    </option>
+                    <option value="كشف بالملفات المفقودة">
+                      كشف بالملفات المفقودة
+                    </option>
+                    <option value="كشف بالعهدة">كشف بالعهدة</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="text-center d-flex justify-content-center gap-2 mt-4">
+            <button class="btn btn-success">طباعة</button>
+            <button class="btn btn-secondary">عودة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      const students = {
+        class4: ["الطالب 1", "الطالب 2", "الطالب 3", "الطالب 4", "الطالب 5", "الطالب 6", "الطالب 7", "الطالب 8", "الطالب 9", "الطالب 10"],
+        class5: ["الطالب 11", "الطالب 12", "الطالب 13", "الطالب 14", "الطالب 15", "الطالب 16", "الطالب 17", "الطالب 18", "الطالب 19", "الطالب 20"],
+        class6: ["الطالب 21", "الطالب 22", "الطالب 23", "الطالب 24", "الطالب 25", "الطالب 26", "الطالب 27", "الطالب 28", "الطالب 29", "الطالب 30"],
+      };
+
+      function updateStudentInfo() {
+        const schoolClassSelect = document.getElementById('school-class');
+        const selectedOption = schoolClassSelect.options[schoolClassSelect.selectedIndex];
+        const studentCount = selectedOption.getAttribute('data-student-count');
+        const selectedClass = schoolClassSelect.value;
+
+        // Update student count
+        document.getElementById('student-count').innerText = `عدد طلاب الصف: ${studentCount}`;
+
+        // Show the "Select All" checkbox
+        document.getElementById('select-all-container').classList.remove('d-none');
+
+        // Generate student list
+        const studentListContainer = document.getElementById('student-list');
+        studentListContainer.innerHTML = ''; // Clear previous list
+
+        students[selectedClass].forEach((student, index) => {
+          const studentItem = document.createElement('div');
+          studentItem.className = 'student-list-item';
+          studentItem.innerHTML = `
+            <label for="student-${index}">
+              <input type="checkbox" id="student-${index}" class="student-checkbox" />
+              ${student}
+            </label>
+          `;
+          studentListContainer.appendChild(studentItem);
+        });
+      }
+
+      function selectAllStudents() {
+        const selectAllCheckbox = document.getElementById('select-all');
+        const studentCheckboxes = document.querySelectorAll('.student-checkbox');
+
+        studentCheckboxes.forEach(checkbox => {
+          checkbox.checked = selectAllCheckbox.checked;
+        });
+      }
+    </script>
+    <script>
+                 $(function() {
+        // Toggle the sidebar when the menu button is clicked
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+
+        // Handle window resizing
+        $(window).resize(function(e) {
+          if ($(window).width() <= 768) {
+            $("#wrapper").removeClass("toggled");
+          } else {
+            $("#wrapper").addClass("toggled");
+          }
+        });
+
+        // Add 'active' class to clicked sidebar link and remove from others
+        $("#sidebar-wrapper a").click(function(e) {
+          // Remove active class from all links
+          $("#sidebar-wrapper a").removeClass("active");
+
+          // Add active class to the clicked link
+          $(this).addClass("active");
+        });
+
+        // Toggle dropdown content visibility on click
+        $(".dropdown-toggle").click(function(e) {
+          e.preventDefault();
+
+          var $dropdown = $(this).next(".custom-dropdown-style");
+
+          if ($dropdown.hasClass("show")) {
+            // Collapse the dropdown
+            $dropdown.removeClass("show");
+            $dropdown.css("height", "0");
+            $dropdown.css("padding", "0");
+          } else {
+            // Expand the dropdown
+            var autoHeight = $dropdown[0].scrollHeight + "px";
+            $dropdown.addClass("show");
+            $dropdown.css("height", 'auto');
+            $dropdown.css("padding", "10px 0");
+          }
+        });
+
+        // Collapse the navbar when any nav-link or dropdown-item is clicked
+        $('.navbar-nav .dropdown-menu .dropdown-item, .navbar-nav > .nav-item:not(.dropdown) > .nav-link').click(function() {
+          if ($(window).width() < 768) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
